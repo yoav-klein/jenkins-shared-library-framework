@@ -1,5 +1,5 @@
-def call() {
-    println("Hello World from library!")
+def call(string name) {
+    println("Hello ${name}, from library!")
 }
 
 def HelloAgain()
