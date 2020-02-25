@@ -1,8 +1,3 @@
-def call(string name) {
+def call(String name) {
     println("Hello ${name}, from library!")
-}
-
-def HelloAgain()
-{
-    println("Hello again...")
 }
