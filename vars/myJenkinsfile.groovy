@@ -1,5 +1,5 @@
 
-def call()
+def call(Map args)
 {
     pipeline
     {
@@ -11,7 +11,7 @@ def call()
             {
                 steps
                 {
-                    echo "Heloo"
+                    echo "Hello ${args.Name}"
                 }
             }
         }
