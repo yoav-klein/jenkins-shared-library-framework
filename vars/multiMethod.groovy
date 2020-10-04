@@ -6,3 +6,6 @@ def FuncA() {
 def FuncB() {
   println "FuncB"
 }
+
+
+return this
