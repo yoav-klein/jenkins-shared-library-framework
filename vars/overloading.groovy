@@ -1,6 +1,6 @@
 
 def call(def firstname, def lastname) {
-  println "Hello ${firstname} ${lastname}"
+  call "${firstname} ${lastname}"
 }
 
 def call(def fullname) {
