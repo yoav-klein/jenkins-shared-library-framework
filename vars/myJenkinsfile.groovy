@@ -42,7 +42,7 @@ def call(Map args)
                 {
                     echo "Hello ${args.Name}"
                     script {
-                      //library('Jenkins-Common')   
+                      library('Jenkins-Common')   
                         // artifactory.groovy is in a library defined by the calling Jenkinsfile
                       artifactoryFramework.upload()
                     }
