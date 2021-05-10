@@ -4,6 +4,10 @@ def call(Map args)
     // take job_specific_params into pipeline_params, 
     // and then add generic parameters to it.
     def pipeline_params = args.job_specific_params
+    if(pipeline_params == NULL)
+    {   
+        pipeline_params = []
+    }
     pipeline_params << string(name: 'Branch', description: 'This is a generic parameter', defaultValue: '')
     properties([parameters(pipeline_params)])
     
