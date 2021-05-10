@@ -18,7 +18,7 @@
 *
 ***************************************************/
 
-@Library('Jenkins-Common') a
+
 
 def call(Map args)
 {
@@ -41,6 +41,9 @@ def call(Map args)
                 steps
                 {
                     echo "Hello ${args.Name}"
+                    script {
+                      library('Jenkins-Common')   
+                    }
                 }
             }
         }
