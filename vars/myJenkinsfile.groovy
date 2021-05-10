@@ -44,7 +44,7 @@ def call(Map args)
                     script {
                       //library('Jenkins-Common')   
                         // artifactory.groovy is in a library defined by the calling Jenkinsfile
-                      ArtifactoryFramework.upload()
+                      artifactoryFramework.upload()
                     }
                 }
             }
