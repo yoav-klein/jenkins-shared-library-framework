@@ -1,6 +1,7 @@
 
 def call(Map args)
 {
+    def cusom_params = []
     custom_params << args.custom_params
     properties([parameters(custom_params)])
     pipeline
