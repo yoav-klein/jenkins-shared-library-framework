@@ -3,6 +3,7 @@ def call(Map args)
 {
     def custom_params = []
     custom_params << args.custom_params
+    custom_params << string(name: 'Branch', description: 'This is a generic parameter', defaultValue: '')
     properties([parameters(custom_params)])
     pipeline
     {
