@@ -40,7 +40,7 @@ def call(Map args)
             {
                 steps {
                     script {
-                        ${args.buildStep}  ${args.buildStepArgs}
+                        "${args.buildStep}"  args.buildStepArgs
                     }
                 }
             }
