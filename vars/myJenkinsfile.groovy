@@ -36,7 +36,15 @@ def call(Map args)
         
         stages
         {
-            stage('First')
+            stage('Build')
+            {
+                steps {
+                    script {
+                        ${args.buildStep}  ${args.buildStepArgs}
+                    }
+                }
+            }
+            stage('Upload')
             {
                 steps
                 {
