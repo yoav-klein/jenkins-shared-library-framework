@@ -1,6 +1,6 @@
 
-def call(String platform, String configuration)
+def call(Map args)
 {
-  println "Running msbuild: platform ${platform}, configuration: ${configuration}" 
+  println "Running msbuild: platform ${args.platform}, configuration: ${args.configuration}" 
   
 }
